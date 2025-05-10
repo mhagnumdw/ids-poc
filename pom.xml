@@ -4,6 +4,7 @@
     <groupId>io.github.mhagnumdw</groupId>
     <artifactId>ids-poc</artifactId>
     <version>1.0.0-SNAPSHOT</version>
+    <description>POC with UUID, ULID, TSID etc</description>
 
     <properties>
         <compiler-plugin.version>3.14.0</compiler-plugin.version>
@@ -16,6 +17,14 @@
         <skipITs>true</skipITs>
         <surefire-plugin.version>3.5.2</surefire-plugin.version>
     </properties>
+
+    <repositories>
+        <!-- Para o jnanoid-enhanced -->
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
 
     <dependencyManagement>
         <dependencies>
@@ -38,6 +47,32 @@
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-arc</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>io.hypersistence</groupId>
+            <artifactId>hypersistence-tsid</artifactId>
+            <version>2.1.4</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.f4b6a3</groupId>
+            <artifactId>uuid-creator</artifactId>
+            <version>6.1.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.f4b6a3</groupId>
+            <artifactId>ulid-creator</artifactId>
+            <version>5.2.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>co.wosher</groupId>
+            <artifactId>jnanoid-enhanced</artifactId>
+            <version>main-SNAPSHOT</version>
+        </dependency>
+
+        <!-- Test -->
         <dependency>
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-junit5</artifactId>
