@@ -11,13 +11,13 @@ import java.util.concurrent.ThreadLocalRandom;
  *
  * @see https://antonz.org/uuidv7/#java
  */
-public final class UUIDv7NoLib {
+public final class UUIDv7 {
 
     private static final Random random = new SecureRandom();
     // private static final Random random = ThreadLocalRandom.current();
     // private static final Random random = new Random();
 
-    private UUIDv7NoLib() {}
+    private UUIDv7() {}
 
     public static UUID randomUUID() {
         byte[] value = randomBytes();

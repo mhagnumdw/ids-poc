@@ -1,7 +1,7 @@
 package io.github.mhagnumdw.uuid.file;
 
 import io.github.mhagnumdw.core.IdFileRunnable;
-import io.github.mhagnumdw.uuid.UUIDv7NoLib;
+import io.github.mhagnumdw.uuid.UUIDv7;
 
 /**
  * Gera os UUIDv7 para um arquivo.
@@ -17,7 +17,7 @@ public class UUIDv7NoLibFileRunnable extends IdFileRunnable {
 
     @Override
     protected Object generateId() {
-        return UUIDv7NoLib.randomUUID().toString();
+        return UUIDv7.randomUUID().toString();
     }
 
     @Override

@@ -3,7 +3,7 @@ package io.github.mhagnumdw.uuid.memory;
 import java.util.Set;
 
 import io.github.mhagnumdw.core.IdMemoryRunnable;
-import io.github.mhagnumdw.uuid.UUIDv7NoLib;
+import io.github.mhagnumdw.uuid.UUIDv7;
 
 /**
  * Gera os UUIDv7 em memória e já faz a contabilização para verificar se gerou algum duplicado.
@@ -16,7 +16,7 @@ public class UUIDv7NoLibMemoryRunnable extends IdMemoryRunnable {
 
     @Override
     protected Object generateId() {
-        return UUIDv7NoLib.randomUUID().toString();
+        return UUIDv7.randomUUID().toString();
     }
 
 }
