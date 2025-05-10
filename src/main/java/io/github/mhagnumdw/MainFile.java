@@ -1,8 +1,9 @@
-package io.github.mhagnumdw.core;
+package io.github.mhagnumdw;
 
 import java.time.Duration;
 import java.time.LocalDateTime;
 
+import io.github.mhagnumdw.core.Log;
 import io.github.mhagnumdw.tsid.TsidFileRunnable;
 
 /**
@@ -19,7 +20,7 @@ public class MainFile {
         Log.info("Início");
 
         int totalThreads = 10; // Alterar para definir o total de threads
-        int totalIdsPerThread = 10_000_000; // Alterar para definir a quantidade de IDs gerados por thread
+        int totalIdsPerThread = 1_000_000; // Alterar para definir a quantidade de IDs gerados por thread
 
         Thread[] threads = new Thread[totalThreads];
 

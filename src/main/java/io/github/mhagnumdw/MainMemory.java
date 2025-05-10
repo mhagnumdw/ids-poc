@@ -1,4 +1,4 @@
-package io.github.mhagnumdw.core;
+package io.github.mhagnumdw;
 
 import java.text.NumberFormat;
 import java.time.Duration;
@@ -6,6 +6,7 @@ import java.time.LocalDateTime;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 
+import io.github.mhagnumdw.core.Log;
 import io.github.mhagnumdw.nanoid.NanoIdMemoryRunnable;
 import io.github.mhagnumdw.tsid.TsidMemoryRunnable;
 import io.github.mhagnumdw.tsrid.TsridMemoryRunnable;
@@ -26,7 +27,7 @@ public class MainMemory {
         Log.info("Início");
 
         int totalThreads = 10; // Alterar para definir o total de threads
-        int totalIdsPerThread = 10_000_000; // Alterar para definir a quantidade de IDs gerados por thread
+        int totalIdsPerThread = 1_000_000; // Alterar para definir a quantidade de IDs gerados por thread
 
         // Set thread-safe
         Set<Object> idsStore = ConcurrentHashMap.newKeySet(totalThreads * totalIdsPerThread);
