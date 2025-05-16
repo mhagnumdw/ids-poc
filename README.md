@@ -1,6 +1,6 @@
 # ids-poc
 
-POC com UUID, ULID, TSID etc.
+POC com UUIDv4, UUIDv7, ULID, TSID etc.
 
 ## Features
 
@@ -17,7 +17,7 @@ POC com UUID, ULID, TSID etc.
 
  Gerar milhões de IDs em paralelo e checar se houve colisão (duplicidade) entre os IDs gerados. Executar `MainMemory` ou `MainFile`. A documentação está no JavaDoc.
 
-## Endpoint REST
+## Endpoint REST para testar a integração com o Hibernate
 
 Subir a aplicação
 
